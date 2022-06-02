@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="app">
+    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    <!-- hide изначально  -->
+    <div class="widget hide" id="widget"> 
+      <div class="widget__header">
+        <div class="widget__left">
+          <div class="widget__date">01.01.2021</div>
+          <div class="widget__time">12:00</div>
+          <div class="widget__day">понедельник</div>
+        </div>
+        <div class="widget__center">
+          <div class="widget__image"><img src="http://openweathermap.org/img/wn/10d@4x.png" alt=""></div>
+        </div>
+        <div class="widget__right">
+          <div class="widget__city" id="#widgetcity">Moscow</div>
+          <div class="widget__temperature">6°C</div>
+          <div class="widget__min-max">0/6, ясно</div>
+        </div>
+      </div>
+      <div class="widget__content">
+        <ul class="widget__list">
+          <li class="widget__item">
+            <div class="widget__title">Давление</div>
+            <div class="widget__content">121</div>
+          </li>
+          <li class="widget__item">
+            <div class="widget__title">Давление</div>
+            <div class="widget__content">121</div>
+          </li>
+          <li class="widget__item">
+            <div class="widget__title">Давление</div>
+            <div class="widget__content">121</div>
+          </li>
+          <li class="widget__item">
+            <div class="widget__title">Давление</div>
+            <div class="widget__content">121</div>
+          </li>
+          <li class="widget__item">
+            <div class="widget__title">Давление</div>
+            <div class="widget__content">121</div>
+          </li>
+          <li class="widget__item">
+            <div class="widget__title">Давление</div>
+            <div class="widget__content">121</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="widget__footer">
+      <button class="popup__btn" id="choosenewcity">Choose a city</button>
+    </div>
+    <div class="popup" id="popup">
+      <div class="popup__wrap">
+        <div class="popup__body">
+          <input type="text" class="popup__input" placeholder="Enter city">
+        </div>
+        <div class="popup__footer">
+          <button class="popup__btn">Choose a city</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="moment.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
